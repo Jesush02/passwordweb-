@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Contraseñas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Generador de Contraseñas</h1>
+
+    <label>Longitud:</label>
+    <input type="number" id="length" min="4" max="64" value="12">
+
+    <label>Etiqueta (opcional):</label>
+    <input type="text" id="tag" placeholder="Ej: Instagram">
+
+    <button onclick="generar()">Generar Contraseña</button>
+
+    <div class="output">
+      <p id="password"></p>
+      <p id="tip"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
