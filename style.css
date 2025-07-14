@@ -1,56 +1,9 @@
-body {
-  font-family: sans-serif;
-  background-color: #0f172a;
-  color: #f1f5f9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.container {
-  text-align: center;
-  max-width: 400px;
-}
-
-input {
-  width: 100%;
-  margin: 10px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-}
-
-.output {
-  margin-top: 20px;
-  word-break: break-word;
-}
-
-/* Botón animado de Uiverse */
-
-.button {
+.type1::before {
+  content: "Generar ahora!";
   height: 50px;
   width: 150px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-  margin-top: 10px;
-}
-
-.button:hover {
-  box-shadow: .5px .5px 150px #252525;
-}
-
-.type1::after {
-  content: "Generar otra :)";
-  height: 50px;
-  width: 150px;
-  background-color: #008080;
-  color: #fff;
+  background-color: #fff;
+  color: #008080;
   position: absolute;
   top: 0%;
   left: 0%;
@@ -63,28 +16,20 @@ input {
   transition: all 0.5s ease-in-out;
 }
 
-.type1::before {
-  content: "Generar ahora!";
+.type1::after {
+  content: "Generar otra :)";
   height: 50px;
   width: 150px;
-  background-color: #fff;
-  color: #008080;
+  background-color: #008080;
+  color: #fff;
   position: absolute;
   top: 0%;
   left: 0%;
-  transform: translateY(0) scale(1);
+  transform: translateY(50px) scale(1);
   font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-in-out;
-}
-
-.type1:hover::after {
-  transform: translateY(0) scale(1.2);
-}
-
-.type1:hover::before {
-  transform: translateY(-50px) scale(0) rotate(120deg);
 }
