@@ -18,10 +18,12 @@ body {
 
 /* Título rotativo */
 .rotating-title {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 4em; /* Antes era 2em */
+  margin-bottom: 30px;
   color: #f1f5f9;
+  font-weight: bold;
 }
+
 
 #rotating-text {
   display: inline-block;
