@@ -16,14 +16,25 @@ body {
   max-width: 400px;
 }
 
+/* Imagen de logo estilo CUCO */
+.logo-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  background-color: #0f172a; /* fusión con fondo de la página */
+}
+
 /* Título rotativo */
 .rotating-title {
-  font-size: 4em; /* Antes era 2em */
-  margin-bottom: 30px;
+  font-size: 4em;
+  margin-bottom: 20px;
   color: #f1f5f9;
   font-weight: bold;
 }
-
 
 #rotating-text {
   display: inline-block;
