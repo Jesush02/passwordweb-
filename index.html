@@ -8,45 +8,53 @@
 </head>
 <body>
   <div class="container">
+    <!-- Imagen logo -->
+    <img src="img/logo-generador.png" alt="Logo Generador" style="max-width: 100%; height: auto; margin-bottom: 20px; border-radius: 10px;">
 
     <!-- Texto rotativo -->
     <h1 class="rotating-title">
       <span id="rotating-text">Generador de Contraseñas</span>
     </h1>
 
+    <!-- Inputs -->
     <label for="length">Tamaño de la contraseña:</label>
     <input type="number" id="length" min="4" max="64" value="12">
 
-    <label for="tag">Etiqueta (ejemp:Instagram, Twitter, etc;):</label>
+    <label for="tag">Etiqueta (ejemp: Instagram, Twitter, etc):</label>
     <input type="text" id="tag" placeholder="Ej: Instagram">
 
+    <!-- Botón de generar -->
     <button class="button type1" onclick="generar()">Generar</button>
 
+    <!-- Salida de contraseña y tip -->
     <div class="output">
       <p id="password"></p>
       <p id="tip"></p>
     </div>
   </div>
 
+  <!-- Script principal -->
   <script src="script.js"></script>
+
+  <!-- Script para rotar frases -->
   <script>
     const frases = [
       "Generador de Contraseñas",
       "🔒 Seguridad en un clic",
       "🛡️ Protege tus cuentas",
       "✨ Passwords únicas",
-      "🔑Tu contraseña ideal", 
-      "😎Crea confianza",
-      "🫰Seguridad al instante"
+      "🔑 Tu contraseña ideal",
+      "😎 Crea confianza",
+      "🫰 Seguridad al instante"
     ];
 
     let index = 0;
     const rotatingText = document.getElementById("rotating-text");
 
     setInterval(() => {
-      index = (index + 1) % frases.length;
       rotatingText.classList.remove("fade");
       void rotatingText.offsetWidth;
+      index = (index + 1) % frases.length;
       rotatingText.textContent = frases[index];
       rotatingText.classList.add("fade");
     }, 2500);
