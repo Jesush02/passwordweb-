@@ -2,20 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Generador de Contraseñas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <img src="portada.png" alt="Portada Generador" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+
     <h1>🔐 Generador de Contraseñas</h1>
 
-    <label>Longitud:</label>
+    <label for="length">Longitud:</label>
     <input type="number" id="length" min="4" max="64" value="12">
 
-    <label>Etiqueta (opcional):</label>
+    <label for="tag">Etiqueta (opcional):</label>
     <input type="text" id="tag" placeholder="Ej: Instagram">
 
+    <!-- Botón animado (vacío para que funcionen ::before y ::after) -->
     <button class="button type1" onclick="generar()"></button>
 
     <div class="output">
