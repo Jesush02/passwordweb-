@@ -27,7 +27,8 @@ input {
   word-break: break-word;
 }
 
-/* ---------- ESTILOS DEL BOTÓN ANIMADO ---------- */
+/* Botón animado de Uiverse */
+
 .button {
   height: 50px;
   width: 150px;
@@ -37,7 +38,7 @@ input {
   position: relative;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-  margin: 20px auto;
+  margin-top: 10px;
 }
 
 .button:hover {
