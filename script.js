@@ -1,3 +1,30 @@
+// === Texto rotativo del título ===
+const frases = [
+  "Generador de Contraseñas",
+  "🔒 Seguridad en un clic",
+  "🛡️ Protege tus cuentas",
+  "✨ Passwords únicas"
+];
+
+let index = 0;
+const rotatingText = document.getElementById("rotating-text");
+
+rotatingText.textContent = frases[index];
+rotatingText.classList.add("fade-in");
+
+setInterval(() => {
+  rotatingText.classList.remove("fade-in");
+  rotatingText.classList.add("fade-out");
+
+  setTimeout(() => {
+    index = (index + 1) % frases.length;
+    rotatingText.textContent = frases[index];
+    rotatingText.classList.remove("fade-out");
+    rotatingText.classList.add("fade-in");
+  }, 500);
+}, 3500);
+
+// === Tips de seguridad y generador de contraseñas ===
 const tips = [
   "Activa la verificación en dos pasos.",
   "No uses la misma contraseña en varios sitios.",
@@ -26,3 +53,4 @@ function generar() {
   document.getElementById("password").textContent = `🔑 ${tag ? tag + ": " : ""}${password}`;
   document.getElementById("tip").textContent = `💡 Tip: ${tip}`;
 }
+
