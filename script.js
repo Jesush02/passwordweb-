@@ -64,7 +64,7 @@ function generar() {
   const tipEl = document.getElementById("tip");
 
   passwordEl.textContent = `🔑 ${tag ? tag + ": " : ""}${password}`;
-  tipEl.textContent = `💡 Tip: ${tip}`;
+  tipEl.textContent = ` ${tip}`;
 
   // Animación suave
   passwordEl.classList.remove("fade");
