@@ -16,6 +16,30 @@ body {
   max-width: 400px;
 }
 
+/* Título rotativo */
+.rotating-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #f1f5f9;
+}
+
+#rotating-text {
+  display: inline-block;
+  animation: fadeInUp 0.6s ease;
+  transition: opacity 0.5s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Inputs y botón base */
 input, button {
   width: 100%;
@@ -32,7 +56,7 @@ input, button {
   word-break: break-word;
 }
 
-/* Animación UIverse */
+/* Animación estilo UIverse */
 .button {
   height: 50px;
   width: 150px;
@@ -47,7 +71,7 @@ input, button {
 }
 
 .button:hover {
-  box-shadow: .5px .5px 150px #252525;
+  box-shadow: 0.5px 0.5px 150px #252525;
 }
 
 .type1::after {
@@ -93,4 +117,3 @@ input, button {
 .type1:hover::before {
   transform: translateY(-50px) scale(0) rotate(120deg);
 }
-
