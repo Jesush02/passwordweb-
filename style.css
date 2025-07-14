@@ -1,3 +1,38 @@
+/* Estilo general */
+body {
+  font-family: sans-serif;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor centrado */
+.container {
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Inputs y botón base */
+input, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Resultado de contraseña */
+.output {
+  margin-top: 20px;
+  word-break: break-word;
+}
+
+/* Animación UIverse */
 .button {
   height: 50px;
   width: 150px;
@@ -6,51 +41,56 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  background: none;
-  padding: 0;
+  transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+  display: block;
 }
 
 .button:hover {
-  box-shadow: 0.5px 0.5px 150px #252525;
+  box-shadow: .5px .5px 150px #252525;
 }
 
-.type1::before,
 .type1::after {
+  content: "Generar otra :)";
   height: 50px;
   width: 150px;
+  background-color: #008080;
+  color: #fff;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
+  transform: translateY(50px);
   font-size: 1rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-in-out;
-  border-radius: 10px;
 }
 
 .type1::before {
   content: "Generar ahora!";
+  height: 50px;
+  width: 150px;
   background-color: #fff;
   color: #008080;
-  transform: translateY(0);
-  z-index: 2;
-}
-
-.type1::after {
-  content: "Generar otra :)";
-  background-color: #008080;
-  color: #fff;
-  transform: translateY(100%);
-  z-index: 1;
-}
-
-.type1:hover::before {
-  transform: translateY(-100%);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
 }
 
 .type1:hover::after {
-  transform: translateY(0);
+  transform: translateY(0) scale(1.2);
+}
+
+.type1:hover::before {
+  transform: translateY(-50px) scale(0) rotate(120deg);
 }
 
