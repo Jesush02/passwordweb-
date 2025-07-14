@@ -25,18 +25,28 @@ setInterval(() => {
 }, 3500);
 
 // === Tips de seguridad y generador de contraseñas ===
-const tips = [
-  "Activa la verificación en dos pasos.",
-  "No uses la misma contraseña en varios sitios.",
-  "Evita fechas de nacimiento o nombres propios.",
-  "Usa un gestor de contraseñas.",
-  "Cambia tus contraseñas con regularidad.",
-  "No compartas contraseñas por mensajes.",
-  "Evita guardar contraseñas en navegadores.",
-  "Utiliza mayúsculas, minúsculas, símbolos y números.",
-  "No uses palabras reales como 'contraseña'.",
-  "Actualiza tus contraseñas tras una filtración."
-];
+const security_tips = [
+    "🔐 Activa la verificación en dos pasos siempre que puedas.",
+    "🔒 Usa contraseñas distintas para cada cuenta.",
+    "⚠️ Nunca hagas clic en enlaces sospechosos.",
+    "🛡️ Mantén tu sistema y apps actualizadas.",
+    "📵 Evita usar Wi-Fi públicas sin una VPN.",
+    "📁 No abras archivos adjuntos inesperados.",
+    "🔑 Usa un administrador de contraseñas seguro.",
+    "🖥️ Bloquea tu pantalla si dejas tu PC sin supervisión.",
+    "🚫 No uses tu nombre o cumpleaños como contraseña.",
+    "📲 Revisa y revoca permisos innecesarios de tus apps.",
+    "🔧 Cambia las contraseñas por defecto de tus dispositivos.",
+    "🕵️‍♂️ No muestres tus llaves en fotos o redes sociales.",
+    "🎥 Instala sensores o cámaras si puedes.",
+    "📦 Ten una copia física de tus documentos importantes.",
+    "🌍 No publiques tu ubicación en tiempo real.",
+    "📞 Agrega un contacto de emergencia en tu teléfono.",
+    "📌 No pegues tus contraseñas en papel a la vista.",
+    "🚪 Cierra sesión al usar computadoras públicas.",
+    "🔐 Asegúrate de que las puertas realmente cierren con seguro.",
+    "📲 Verifica llamadas de bancos antes de dar información."
+]
 
 function generar() {
   const length = parseInt(document.getElementById("length").value);
